@@ -32,32 +32,11 @@
             observer.observe(el);
         });
 
-        // Contador animado para estadísticas
-        function animateCounter(element) {
-            const target = parseInt(element.getAttribute('data-target'));
-            const suffix = element.getAttribute('data-suffix') || '';
-            const duration = 2000; // 2 segundos
-            const steps = 60;
-            const increment = target / steps;
-            let current = 0;
-            const stepTime = duration / steps;
 
-            const updateCounter = () => {
-                current += increment;
-                if (current < target) {
-                    element.textContent = Math.floor(current) + suffix;
-                    setTimeout(updateCounter, stepTime);
-                } else {
-                    element.textContent = target + suffix;
-                }
-            };
-
-            updateCounter();
-        }
 
         // Observer para activar contadores cuando sean visibles
         const statObserverOptions = {
-            threshold: 0.3,
+            threshold: 0.5,
             rootMargin: '0px'
         };
 
@@ -65,19 +44,15 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
                     entry.target.classList.add('counted');
-                    setTimeout(() => {
-                        animateCounter(entry.target);
-                    }, 200);
+                    animateCounter(entry.target);
                 }
             });
         }, statObserverOptions);
 
-        // Observar los contadores cuando el DOM esté listo
-        setTimeout(() => {
-            document.querySelectorAll('.stat-number').forEach(counter => {
-                statObserver.observe(counter);
-            });
-        }, 100);
+        // Observar los contadores
+        document.querySelectorAll('.stat-number').forEach(counter => {
+            statObserver.observe(counter);
+        });
 
         // Smooth scroll para navegación
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
