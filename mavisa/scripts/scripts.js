@@ -25,12 +25,59 @@
         }, observerOptions);
 
         // Aplicar animaciones a las tarjetas
-        document.querySelectorAll('.service-card, .benefit-card, .client-item, .consultoria-item, .stat-item').forEach(el => {
+        document.querySelectorAll('.service-card, .benefit-card, .client-item, .consultoria-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+
+        // Contador animado para estadísticas
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const suffix = element.getAttribute('data-suffix') || '';
+            const duration = 2000; // 2 segundos
+            const steps = 60;
+            const increment = target / steps;
+            let current = 0;
+            const stepTime = duration / steps;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < target) {
+                    element.textContent = Math.floor(current) + suffix;
+                    setTimeout(updateCounter, stepTime);
+                } else {
+                    element.textContent = target + suffix;
+                }
+            };
+
+            updateCounter();
+        }
+
+        // Observer para activar contadores cuando sean visibles
+        const statObserverOptions = {
+            threshold: 0.3,
+            rootMargin: '0px'
+        };
+
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                    entry.target.classList.add('counted');
+                    setTimeout(() => {
+                        animateCounter(entry.target);
+                    }, 200);
+                }
+            });
+        }, statObserverOptions);
+
+        // Observar los contadores cuando el DOM esté listo
+        setTimeout(() => {
+            document.querySelectorAll('.stat-number').forEach(counter => {
+                statObserver.observe(counter);
+            });
+        }, 100);
 
         // Smooth scroll para navegación
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
