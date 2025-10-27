@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavisa Consultores - Despacho Contable y Legal</title>
+    <script src="scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a class="logo" href="#home"><img src="img/LogoPng.png" alt="Mavisa Consultores" class="logo-img"></a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#nosotros" onclick="closeMenu()">Nosotros</a></li>
+                <li><a href="#servicios" onclick="closeMenu()">Servicios</a></li>
+                <li><a href="#consultoria" onclick="closeMenu()">Consultoría</a></li>
+                <li><a href="#beneficios" onclick="closeMenu()">Beneficios</a></li>
+                <li><a href="#mision-vision" onclick="closeMenu()">Misión & Visión</a></li>
+                <li><a href="#clientes" onclick="closeMenu()">Clientes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <img src="img/LogoPng.png" class="hero-img" alt="MAVISA Consultores" srcset="">
+            <p class="subtitle">Despacho Contable y Legal</p>
+            <p>Socios estratégicos en contabilidad, finanzas y servicios legales desde 1996</p>
+            <a href="#nosotros" class="cta-button">Conócenos</a>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros">
+        <h2 class="section-title">Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Más de 28 años de experiencia</h3>
+                <p>Somos un despacho contable y legal, ubicado en la zona metropolitana de Monterrey, establecido desde el año 1996.</p>
+                <p>Brindamos soporte en temas de contabilidad financiera, fiscal y en administración de nóminas.</p>
+                <p>Nuestros servicios le permiten a nuestros clientes canalizar tareas administrativas para enfocar sus esfuerzos en las actividades claves de sus negocios.</p>
+            </div>
+            <div class="about-image">
+                <img src="img/about-us.jpg" class="about-img" alt="Nosotros - Mavisa Consultores">
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">1996</div>
+                <p>Año de fundación</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">28+</div>
+                <p>Años de experiencia</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <p>Clientes satisfechos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="services-intro">Nuestro amplio portafolio de servicios nos permite desarrollar estrategias integrales personalizadas a las necesidades de cada uno de nuestros clientes. Mediante la utilización de los esquemas más avanzados e innovadores, implementamos activamente estrategias bajo un marco de seguridad que respondan adecuadamente al entorno económico y fortalezcan la posición en el sector donde operan nuestros clientes.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h3>Servicios de Contabilidad</h3>
+                <p>Gestión completa de la contabilidad financiera y fiscal de tu empresa con los más altos estándares de calidad.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👥</div>
+                <h3>Maquila de Nómina</h3>
+                <p>Administración integral de nóminas, incluyendo cálculos, dispersión y cumplimiento de obligaciones patronales.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Estrategia Fiscal y Financiera</h3>
+                <p>Planeación y optimización fiscal para maximizar beneficios dentro del marco legal vigente.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✓</div>
+                <h3>Auditoría Interna</h3>
+                <p>Revisión y validación de procesos ante IMSS, SAT y otras autoridades fiscales.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📄</div>
+                <h3>Estados Financieros Dictaminados</h3>
+                <p>Elaboración y dictaminación de estados financieros conforme a las normas de información financiera.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚖️</div>
+                <h3>Soporte Legal</h3>
+                <p>Asesoría legal laboral, penal, fiscal y administrativa para proteger los intereses de tu empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultoría Integral -->
+    <section id="consultoria">
+        <h2 class="section-title">Consultoría Integral Administrativa</h2>
+        
+        <!-- Sección 1: Contable - Fiscal -->
+        <h3 class="consultoria-subtitle">Contable - Fiscal</h3>
+        <div class="consultoria-grid-two">
+            <div class="consultoria-item">
+                <h4>Servicios Especializados</h4>
+                <ul>
+                    <li>Estrategias fiscales y financieras</li>
+                    <li>Servicios de contabilidad</li>
+                    <li>Apoyo para trámites ante las instituciones fiscales</li>
+                    <li>Devolución IVA</li>
+                    <li>Estados financieros dictaminados</li>
+                </ul>
+            </div>
+            <div class="consultoria-item">
+                <h4>Asesoría y Soporte</h4>
+                <ul>
+                    <li>Dictamen</li>
+                    <li>Atención a revisiones</li>
+                    <li>Invitaciones fiscales</li>
+                    <li>Apoyo permanente de nuestros asesores</li>
+                    <li>Facturación electrónica</li>
+                    <li>Cobertura total en servicios administrativos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección 2: Seguridad Social y Nóminas -->
+        <h3 class="consultoria-subtitle">Seguridad Social y Nóminas</h3>
+        <div class="consultoria-grid-two">
+            <div class="consultoria-item">
+                <h4>Servicios de Nómina</h4>
+                <ul>
+                    <li>Altas patronales</li>
+                    <li>Altas REPSE</li>
+                    <li>Maquila de nómina</li>
+                    <li>Dispersión de nómina</li>
+                    <li>Apoyo de manejo de IMSS y SUA</li>
+                </ul>
+            </div>
+            <div class="consultoria-item">
+                <h4>Dictámenes y Trámites</h4>
+                <ul>
+                    <li>Dictamen IMSS</li>
+                    <li>SATIC / SIROC</li>
+                    <li>FONACOT</li>
+                    <li>INFONAVIT</li>
+                    <li>IDSE</li>
+                    <li>SIPARE</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección 3: Auditoría y Servicios Legales -->
+        <h3 class="consultoria-subtitle">Auditoría y Servicios Legales</h3>
+        <div class="consultoria-grid-two">
+            <div class="consultoria-item">
+                <h4>Auditoría y Cumplimiento</h4>
+                <ul>
+                    <li>Dictamen electrónico</li>
+                    <li>Auditoría interna ante IMSS, SAT</li>
+                    <li>Apoyo en devoluciones del IVA</li>
+                </ul>
+            </div>
+            <div class="consultoria-item">
+                <h4>Servicios Legales</h4>
+                <ul>
+                    <li>Soporte legal laboral</li>
+                    <li>Asesoría penal</li>
+                    <li>Consultoría fiscal</li>
+                    <li>Derecho administrativo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+        <h2 class="section-title">Beneficios para tu Negocio</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-regular fa-clock"></i></div>
+                <h3>Certeza y Puntualidad</h3>
+                <p>Cumplimiento oportuno de todas tus obligaciones fiscales y administrativas.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-angles-down"></i></div>
+                <h3>Disminución de Tareas Administrativas</h3>
+                <p>Libera tiempo valioso para concentrarte en el crecimiento de tu negocio.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-coins"></i></div>
+                <h3>Conveniencia en tus Finanzas</h3>
+                <p>Optimización de recursos financieros y mejor control de costos operativos.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                <h3>Eficiencia en la Información</h3>
+                <p>Reportes precisos y oportunos para la toma de decisiones estratégicas.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-gavel"></i></div>
+                <h3>Resolución de Conflictos</h3>
+                <p>Soporte legal especializado para resolver cualquier contingencia.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Asesoría de Confianza</h3>
+                <p>Relaciones de largo plazo basadas en la transparencia y el compromiso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section id="mision-vision">
+        <h2 class="section-title">Misión y Visión</h2>
+        <div class="mv-card">
+            <h3>Nuestra Filosofía de Negocio</h3>
+            <p>La filosofía de negocio en MAVISA es formar relaciones exitosas de largo plazo con todos nuestros clientes. Con este objetivo, basados en la <strong>confianza</strong>, el <strong>compromiso</strong>, la <strong>seguridad</strong> y el <strong>servicio</strong>; nos convertimos en socios estratégicos de nuestros clientes para ayudarles a transformar sus empresas en organizaciones exitosas de alto rendimiento.</p>
+            
+            <div class="mv-highlight">
+                <p>Esto nos ha permitido que MAVISA se conforme por un <strong>equipo multidisciplinario</strong> de especialistas en materia legal, tributaria, contable, financiera, planeación corporativa y patrimonial, recursos humanos y en desarrollo e implementación de estrategias de negocio; por esta razón nos <strong>comprometemos con el crecimiento y desarrollo permanente</strong> de nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section id="clientes">
+        <h2 class="section-title">Nuestros Clientes</h2>
+        <div class="clients-grid">
+            <!-- Primera mitad - visible en desktop -->
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Venttus SA CV.png" alt="" srcset=""></div>
+                <h4>Venttus S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/GTA Servicios Legales.jpg" alt="" srcset=""></div>
+                <h4>GT & A Servicios Legales, S.C.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Corporativo Agro Chimayo.png" alt="" srcset=""></div>
+                <h4>Corporativo Agro Chimayo S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Cualti Barn.png" alt="" srcset=""></div>
+                <h4>Cualti Barn S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ADM Recruiment.png" alt="" srcset=""></div>
+                <h4>Adm Recruiment S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Luna27.png" alt="" srcset=""></div>
+                <h4>Luna 27 Nail Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ESAGA.png" alt="" srcset=""></div>
+                <h4>ESAGA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/HREdificaciones.png" alt="" srcset=""></div>
+                <h4>HR Edificaciones</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Belleza Nails Spa.png" alt="" srcset=""></div>
+                <h4>Belleza Nails & Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/PICSA.png" alt="" srcset=""></div>
+                <h4>PICSA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Duty Constructions.png" alt="" srcset=""></div>
+                <h4>Duty Constructions</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ADOSA.png" alt="" srcset=""></div>
+                <h4>ADOSA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Firmes y Concreticos.png" alt="" srcset=""></div>
+                <h4>Firmes Concréticos S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ALUDAR.png" alt="" srcset=""></div>
+                <h4>ALUDAR</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/HCC.png" alt="" srcset=""></div>
+                <h4>HCC</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/institutoSimonBalderas.png" alt="" srcset=""></div>
+                <h4>Instituto Simon Balderas</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/pyo.png" alt="" srcset=""></div>
+                <h4>P&O</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/lizzy.png" alt="" srcset=""></div>
+                <h4>Lizzy Salón de Belleza</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bocanegra.png" alt="" srcset=""></div>
+                <h4>Servicio Automotriz Bocanegra</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bai.png" alt="" srcset=""></div>
+                <h4>BAI</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ba.png" alt="" srcset=""></div>
+                <h4>BA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/novanailspa.png" alt="" srcset=""></div>
+                <h4>Novi Nail Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bpwork.png" alt="" srcset=""></div>
+                <h4>BPWORK</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Proyectos WHG México S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Suveton S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Blu Job S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Arrendadora JPM S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Cetus Producciones S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Vetron S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Intra Regio S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Fouth Solutions S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Intrareciclaje S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Cohuca Servicios S.A. de C.V.</h4>
+            </div>
+
+            <!-- Duplicados para efecto infinito en móvil -->
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Venttus SA CV.png" alt="" srcset=""></div>
+                <h4>Venttus S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/GTA Servicios Legales.jpg" alt="" srcset=""></div>
+                <h4>GT & A Servicios Legales, S.C.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Corporativo Agro Chimayo.png" alt="" srcset=""></div>
+                <h4>Corporativo Agro Chimayo S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Cualti Barn.png" alt="" srcset=""></div>
+                <h4>Cualti Barn S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ADM Recruiment.png" alt="" srcset=""></div>
+                <h4>Adm Recruiment S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Luna27.png" alt="" srcset=""></div>
+                <h4>Luna 27 Nail Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ESAGA.png" alt="" srcset=""></div>
+                <h4>ESAGA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/HREdificaciones.png" alt="" srcset=""></div>
+                <h4>HR Edificaciones</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Belleza Nails Spa.png" alt="" srcset=""></div>
+                <h4>Belleza Nails & Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/PICSA.png" alt="" srcset=""></div>
+                <h4>PICSA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Duty Constructions.png" alt="" srcset=""></div>
+                <h4>Duty Constructions</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ADOSA.png" alt="" srcset=""></div>
+                <h4>ADOSA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/Firmes y Concreticos.png" alt="" srcset=""></div>
+                <h4>Firmes Concréticos S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ALUDAR.png" alt="" srcset=""></div>
+                <h4>ALUDAR</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/HCC.png" alt="" srcset=""></div>
+                <h4>HCC</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/institutoSimonBalderas.png" alt="" srcset=""></div>
+                <h4>Instituto Simon Balderas</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/pyo2.png" alt="" srcset=""></div>
+                <h4>P&O</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/lizzy.png" alt="" srcset=""></div>
+                <h4>Lizzy </h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bocanegra.png" alt="" srcset=""></div>
+                <h4>Servicio Automotriz Bocanegra</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bai.png" alt="" srcset=""></div>
+                <h4>BAI</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/ba.png" alt="" srcset=""></div>
+                <h4>BA</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/novanailspa.png" alt="" srcset=""></div>
+                <h4>Novi Nail Spa</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><img src="img/clientes/bpwork.png" alt="" srcset=""></div>
+                <h4>BPWORK</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Proyectos WHG México S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Suveton S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Blu Job S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Arrendadora JPM S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Cetus Producciones S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Vetron S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Intra Regio S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Fouth Solutions S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Intrareciclaje S.A. de C.V.</h4>
+            </div>
+            <div class="client-item">
+                <div class="client-logo"><i class="fa-regular fa-building"></i></div>
+                <h4>Cohuca Servicios S.A. de C.V.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MAVISA Consultores</h3>
+                <p>Despacho Contable y Legal</p>
+                <p>Zona Metropolitana de Monterrey</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📧 contacto@consultoresmavisa.com</p>
+                <p>📱 81 8330 2050</p>
+                <p>📍 Monterrey, Nuevo León</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios de Atención</h3>
+                <p>Lunes a Viernes: 9:00 - 18:00</p>
+                <p>Sábados: 9:00 - 14:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MAVISA Consultores. Todos los derechos reservados. Establecidos desde 1996.</p>
+        </div>
+    </footer>
+</body>
+</html>
